@@ -1,3 +1,7 @@
+:red_square: Forked from https://github.com/dianoetic/indiefeed
+
+---
+
 # IndieFeed  <img align="right" width="100" height="100" src="https://github.com/dianoetic/indiefeed/blob/master/static/heart.png">
 
 A [Hugo](https://gohugo.io/) theme for the independent web.
