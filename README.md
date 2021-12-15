@@ -31,7 +31,7 @@ If you are new to the Hugo framework, fret not! It's a very popular and friendly
 To add this theme to your Hugo site, run this from the root directory:
 
 ```sh
-git submodule add https://github.com/dianoetic/indiefeed.git themes/indiefeed
+git submodule add https://github.com/mandarvaze/indiefeed.git themes/indiefeed
 ```
 
 ### 2. Update your `config`
