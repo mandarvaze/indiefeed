@@ -1,0 +1,7 @@
+.md p {
+    padding-top: 5px;
+}
+
+h2, h2>a {
+    margin: 0 0 10px 0;
+}
