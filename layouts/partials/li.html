@@ -32,7 +32,7 @@
                 </h2>
                 {{ else }}
                 <article class="md p-summary e-content">
-                    <h2 class="p-name"><a href="{{.Params.Uri}}">{{.Title}}</a></h2>
+                    <h2 class="p-name"><a href="{{.Permalink}}">{{.Title}}</a></h2>
                     {{ end }}
                     {{ .Content | truncate 300 }}
                     {{ if .Truncated }}
