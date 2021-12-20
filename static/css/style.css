@@ -12,6 +12,11 @@ a {
     color: var(--color-link);
 }
 
+/* Underline for a link. Seems so '80s 😄 */
+.md p>a {
+    /*! border-bottom: 1px solid var(--accent); */
+}
+
 .md p:last-child {
     padding-bottom: 0.2rem !important;
 }

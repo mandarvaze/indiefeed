@@ -3,8 +3,9 @@
 @media (prefers-color-scheme: light) {
     :root {
         --accent: #0f1111;
+        --color-link: #5277e8;
         --color-primary: rgba(29,43,76,.85);
-        --color-secondary: rgb(68, 75, 71);
+        --color-secondary: #55b8e8;
         --color-bg: #f8faf8;
         --item-bg: rgba(255, 255, 255, 1);
     }
@@ -13,7 +14,7 @@
 @media (prefers-color-scheme: dark) {
     :root {
         --accent: #d4d9dd;
-        --color-link:  #1184df;
+        --color-link: #5277e8;
         --color-primary: #ccc;
         --color-secondary: #ffc300;
         --color-bg: #0f0f0f;
