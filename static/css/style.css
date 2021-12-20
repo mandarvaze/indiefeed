@@ -1,8 +1,22 @@
+.md code {
+    font-size: calc(0.75rem * var(--scale));
+    color: brown;
+}
+
 .md p {
     padding-top: 5px;
     font-size: 13px;
 }
 
+a {
+    color: var(--color-link);
+}
+
+.md p:last-child {
+    padding-bottom: 0.2rem !important;
+}
+
 h2, h2>a {
     margin: 0 0 10px 0;
 }
+
