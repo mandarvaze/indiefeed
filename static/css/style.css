@@ -12,9 +12,9 @@ a {
     color: var(--color-link);
 }
 
-/* Underline for a link. Seems so '80s 😄 */
+/* Remove underline for a link. Who uses that these days ? 😄 */
 .md p>a {
-    /*! border-bottom: 1px solid var(--accent); */
+    border-bottom: 0px solid var(--accent);
 }
 
 .md p:last-child {
