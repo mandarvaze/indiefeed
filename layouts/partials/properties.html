@@ -4,17 +4,7 @@
             {{ if .Date }}
             <span class="dt-published hidden">{{ .Date }}</span>
             <a class="icon u-url" href="{{.Permalink}}">
-                {{ $diff := div (sub now.Unix .Date.Unix) 86400 }}
-                {{ if eq $diff 0 }}earlier today
-                {{ else }}
-                {{ if eq $diff -1 }}a day from now
-                {{ else }}
-                {{ if lt $diff 0 }}{{ mul -1 $diff }} days in the future
-                {{ else }}
-                {{ if eq $diff 1 }}a day ago
-                {{ else }}
-                {{ $diff }} days ago
-                {{ end }}{{ end }}{{ end }}{{ end }}
+                {{ .Date | time.Format ":date_medium" }}
             </a>
             {{ end }}
         </span>
