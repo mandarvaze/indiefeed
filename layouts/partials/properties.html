@@ -4,7 +4,7 @@
             {{ if .Date }}
             <span class="dt-published hidden">{{ .Date }}</span>
             <a class="icon u-url" href="{{.Permalink}}">
-                {{ .Date | time.Format ":date_medium" }}
+                {{ .Date.Format (.Site.Params.dateFormat | default "Jan 02, 2006") }}
             </a>
             {{ end }}
         </span>
