@@ -28,3 +28,9 @@ h2, h2>a {
 .properties {
     padding-top: 5px;
 }
+
+hr {
+    border: 1px solid var(--accent);
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
