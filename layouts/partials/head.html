@@ -2,7 +2,7 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ .Site.Title }}</title>    
+    <title>{{ .Site.Title }}</title>
     {{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
     {{ with .Site.Params.monetization }}<meta name="monetization" content="{{ . }}">{{ end }}
 
@@ -23,15 +23,15 @@
     {{ if .Site.Params.customCSS }}
     <link rel="stylesheet" href="{{ .Site.Params.customCSS | absURL }}" crossorigin="anonymous" media="screen">
     {{ end }}
-    
+
     <!-- Webmention -->
     {{ with .Site.Params.webmentionUrl }}<link rel="webmention" href="{{ . }}" />{{ end }}
     {{ with .Site.Params.pingbackUrl }}<link rel="pingback" href="{{ . }}" />{{ end }}
-    
+
     <!-- Micro{p,s}ub -->
     {{ with .Site.Params.micropubUrl }}<link rel="micropub" href="{{ . }}">{{ end }}
     {{ with .Site.Params.microsubUrl }}<link rel="microsub" href="{{ . }}">{{ end }}
-    
+
     <!-- Silos -->
     <meta property="og:url" content="{{ .Site.BaseURL }}" />
     <meta property="og:title" content="{{ .Site.Title }}" />
@@ -39,10 +39,16 @@
     <meta property="og:type" content="website" />
     {{ with .Site.Params.description }}<meta property="og:description" content="{{ . }}" />{{ end }}
     {{ with .Site.Params.socialImage }}<meta property="og:image" content="{{ . }}" />{{ end }}
-    
+
     <meta name="twitter:title" content="{{ .Site.Title }}" />
     {{ with .Site.Params.description }}<meta name="twitter:description" content="{{ . }}" />{{ end }}
     {{ with .Site.Params.socialImage }}
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:image" content="{{ . }}" />{{ end }}
+
+    {{ if .Params.useMermaid }}
+        <!-- Load mermaid.js when "useMermaid = true" set in content front matter -->
+        <script async src="https://unpkg.com/mermaid@8.9.1/dist/mermaid.min.js"></script>
+    {{ end }}
+
 </head>
