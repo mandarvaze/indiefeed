@@ -1,6 +1,6 @@
 .md code {
     font-size: calc(0.75rem * var(--scale));
-    color: brown;
+    color: #e88787;
 }
 
 .md p {
