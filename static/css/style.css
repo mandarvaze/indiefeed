@@ -35,8 +35,16 @@ hr {
     margin-bottom: 15px;
 }
 
+/* Center the in-post image */
 p img {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+/* Center the table */
+.md table {
+    width: 75%;  /* Full width table looks odd, for now. */
+    margin-left: auto;
+    margin-right: auto;
 }
