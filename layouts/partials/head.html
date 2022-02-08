@@ -8,8 +8,8 @@
 
     <!-- Place favicon files in ./static/ -->
     <link rel="shortcut icon" href="{{ "favicon.ico" | absURL }}">
-    <link rel="icon" type="image/png" href="{{ "favicon-32x32.png" | absURL }}" sizes="32x32" />
-    <link rel="icon" type="image/png" href="{{ "favicon-16x16.png" | absURL }}" sizes="16x16" />
+    <link rel="icon" type="image/png" href="{{ "favicon-32x32.ico" | absURL }}" sizes="32x32" />
+    <link rel="icon" type="image/png" href="{{ "favicon-16x16.ico" | absURL }}" sizes="16x16" />
 
     <!-- IndieAuth -->
     <link rel="authorization_endpoint" href="https://indieauth.com/auth">
@@ -51,4 +51,8 @@
         <script async src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
     {{ end }}
 
+    <!-- Google Analytics Support -->
+    {{- if .Site.GoogleAnalytics -}}
+        {{ template "_internal/google_analytics_async.html" . }}
+    {{- end -}}
 </head>
